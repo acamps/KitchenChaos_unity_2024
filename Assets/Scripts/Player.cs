@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine;
 //3h49m26s
 //4h13m09s
+//4h23m46s -- Why the clear counter needs a scriptable object to be set up? Or is that just legacy?
 public class Player : MonoBehaviour, IKitchenObjectParent {
     public static Player Instance { get; private set; }
 

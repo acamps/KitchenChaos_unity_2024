@@ -20,15 +20,15 @@ public class BaseCounter : MonoBehaviour, IKitchenObjectParent {
         this.kitchenObject = kitchenObject;
     }
 
-    public KitchenObject GetKitchenObject () {
+    public KitchenObject GetKitchenObject() {
         return this.kitchenObject;
     }
 
-    public void ClearKitchenObject () {
+    public void ClearKitchenObject() {
         this.kitchenObject = null;
     }
 
-    public bool HasKitchenObject () {
+    public bool HasKitchenObject() {
         return this.kitchenObject != null;
     }
 }
