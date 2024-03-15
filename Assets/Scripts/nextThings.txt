@@ -1,6 +1,4 @@
 TODO
-- When an item from the list is delivered, remove it from the list
-    - Requires connection between delivery counter and deliveryManager
 - When an item is removed start the counter. (Can you disable updates?)
 
 
@@ -9,3 +7,5 @@ Thougts
 
 
 DONE
+- When an item from the list is delivered, remove it from the list
+    - Requires connection between delivery counter and deliveryManager // used singleton

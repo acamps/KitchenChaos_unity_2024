@@ -2731,6 +2731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424c8fe767b224026bd9f0a15f565373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  recipeListSO: {fileID: 11400000, guid: 054f95cfcc7244fec8c53f84ef2790c3, type: 2}
 --- !u!4 &1758953912
 Transform:
   m_ObjectHideFlags: 0
