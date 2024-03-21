@@ -515,7 +515,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Sound effect: 5'
+  m_text: 'Sound Effects: 5'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2622,8 +2622,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65bbe9ca34dc24603afbe61873e6256b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioEffectsButton: {fileID: 0}
-  musicButton: {fileID: 0}
+  soundEffectsButton: {fileID: 377025176}
+  musicButton: {fileID: 313089967}
+  soundEffectsText: {fileID: 203918726}
+  musicText: {fileID: 1662442643}
 --- !u!1 &742326620
 GameObject:
   m_ObjectHideFlags: 0
