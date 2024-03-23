@@ -29,6 +29,8 @@ public class OptionsUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI interactText;
     [SerializeField] private TextMeshProUGUI interactAlternateText;
     [SerializeField] private TextMeshProUGUI pauseText;
+    [SerializeField] private Transform pressToRebindKeyTransform;
+
 
     private void Awake() {
         Instance = this;
@@ -55,6 +57,7 @@ public class OptionsUI : MonoBehaviour
         KitchenGameManager.Instance.OnGameUnpaused += KitchenGameManager_OnGameUnpaused;
         UpdateVisual();
 
+        HidePressToRebindKey();
         Hide();
     }
 
@@ -81,5 +84,12 @@ public class OptionsUI : MonoBehaviour
 
     private void Hide() {
         gameObject.SetActive(false);
+    }
+
+    private void ShowPressToRebindKey() {
+        pressToRebindKeyTransform.gameObject.SetActive(true);
+    }
+    private void HidePressToRebindKey() {
+        pressToRebindKeyTransform.gameObject.SetActive(false);
     }
 }
