@@ -86,5 +86,13 @@ public class GameInput : MonoBehaviour {
     public void RebindBinding (Binding binding) {
         // first disable existing one
         // listen for new and assign
+        playerInputActions.Player.Disable();
+
+        playerInputActions.Player.Move.PerformInteractiveRebinding(1)
+            .OnComplete(callback => {
+                callback.Dispose();
+                playerInputActions.Player.Enable();
+            })
+            .Start();
     }
 }
