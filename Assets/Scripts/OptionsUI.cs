@@ -47,9 +47,13 @@ public class OptionsUI : MonoBehaviour
             Hide();
         });
 
-        moveUpButton.onClick.AddListener(() =>{
-            GameInput.Instance.RebindBinding(GameInput.Binding.Move_Up); 
-        });
+        moveUpButton.onClick.AddListener(() =>{ RebindBinding(GameInput.Binding.Move_Up); });
+        moveDownButton.onClick.AddListener(() =>{ RebindBinding(GameInput.Binding.Move_Down); });
+        moveRightButton.onClick.AddListener(() =>{ RebindBinding(GameInput.Binding.Move_Right); });
+        moveLeftButton.onClick.AddListener(() =>{ RebindBinding(GameInput.Binding.Move_Left); });
+        interactButton.onClick.AddListener(() =>{ RebindBinding(GameInput.Binding.Interact); });
+        interactAlternateButton.onClick.AddListener(() =>{ RebindBinding(GameInput.Binding.InteractAlternate); });
+        pauseButton.onClick.AddListener(() =>{ RebindBinding(GameInput.Binding.Pause); });
 
     }
 
@@ -91,5 +95,13 @@ public class OptionsUI : MonoBehaviour
     }
     private void HidePressToRebindKey() {
         pressToRebindKeyTransform.gameObject.SetActive(false);
+    }
+
+    private void RebindBinding(GameInput.Binding binding) {
+        ShowPressToRebindKey();
+        GameInput.Instance.RebindBinding(binding, () => {
+            HidePressToRebindKey();
+            UpdateVisual();
+        }); 
     }
 }
