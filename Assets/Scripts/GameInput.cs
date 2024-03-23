@@ -22,6 +22,9 @@ public class GameInput : MonoBehaviour {
         Interact,
         InteractAlternate,
         Pause,
+        Gamepad_Interact,
+        Gamepad_InteractAlternate,
+        Gamepad_Pause,
 
     }
 
