@@ -958,7 +958,7 @@ GameObject:
   - component: {fileID: 89386520}
   - component: {fileID: 89386519}
   m_Layer: 5
-  m_Name: KeyText
+  m_Name: KeyInteractText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2537,7 +2537,7 @@ GameObject:
   - component: {fileID: 323898740}
   - component: {fileID: 323898739}
   m_Layer: 5
-  m_Name: KeyText
+  m_Name: GamepadLeftStickText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4401,7 +4401,7 @@ GameObject:
   - component: {fileID: 484372570}
   - component: {fileID: 484372569}
   m_Layer: 5
-  m_Name: KeyText
+  m_Name: KeyMoveLeftText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5443,7 +5443,7 @@ GameObject:
   - component: {fileID: 656850439}
   - component: {fileID: 656850438}
   m_Layer: 5
-  m_Name: KeyText
+  m_Name: KeyMoveRightText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5779,7 +5779,7 @@ GameObject:
   - component: {fileID: 700530407}
   - component: {fileID: 700530406}
   m_Layer: 5
-  m_Name: KeyText
+  m_Name: KeyMoveDownText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6480,7 +6480,7 @@ GameObject:
   - component: {fileID: 758944846}
   - component: {fileID: 758944845}
   m_Layer: 5
-  m_Name: KeyText
+  m_Name: KeyMoveUpText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7085,7 +7085,7 @@ GameObject:
   - component: {fileID: 797167997}
   - component: {fileID: 797167996}
   m_Layer: 5
-  m_Name: KeyText
+  m_Name: KeyGamepadInteractText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9813,7 +9813,7 @@ GameObject:
   - component: {fileID: 1297995918}
   - component: {fileID: 1297995917}
   m_Layer: 5
-  m_Name: KeyText
+  m_Name: KeyInteractAlternateText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11818,7 +11818,7 @@ GameObject:
   - component: {fileID: 1572593569}
   - component: {fileID: 1572593568}
   m_Layer: 5
-  m_Name: KeyText
+  m_Name: KeyGamepadInteractAlternateText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12537,7 +12537,7 @@ GameObject:
   - component: {fileID: 1672470568}
   - component: {fileID: 1672470567}
   m_Layer: 5
-  m_Name: KeyText
+  m_Name: KeyGamepadPauseText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13557,7 +13557,7 @@ GameObject:
   - component: {fileID: 1814164455}
   - component: {fileID: 1814164454}
   m_Layer: 5
-  m_Name: KeyText
+  m_Name: KeyPauseText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
