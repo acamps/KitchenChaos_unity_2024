@@ -18,7 +18,17 @@ public class TutorialUI : MonoBehaviour {
 
     private void Start() {
         GameInput.Instance.OnBindingRebind += GameInput_OnBindingRebind;
+        KitchenGameManager.Instance.OnStateChanged += KitchenGameManager_OnStateChanged;
+
         UpdateVisual();
+
+        Show();
+    }
+
+    private void KitchenGameManager_OnStateChanged(object sender, EventArgs e) {
+        if (KitchenGameManager.Instance.IsCountdownToStartActive()) {
+            Hide();
+        }
     }
 
     private void GameInput_OnBindingRebind(object sender, EventArgs e) {
@@ -36,5 +46,13 @@ public class TutorialUI : MonoBehaviour {
         keyGamepadInteractText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Gamepad_Interact);
         keyGamepadInteractAlternateText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Gamepad_InteractAlternate);
         keyGamepadPauseText.text = GameInput.Instance.GetBindingText(GameInput.Binding.Gamepad_Pause);
+    }
+
+    private void Show() {
+        gameObject.SetActive(true);
+    }
+
+    private void Hide() {
+        gameObject.SetActive(false);
     }
 }
